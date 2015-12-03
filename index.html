@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculo para Pago sencillo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    
+    <link rel="stylesheet" href="lib/normalize/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <!-- Add your site or application content here -->
+    <nav class="navbar navbar-default">
+     <div class="container">
+       <div class="navbar-header">
+         <a class="navbar-brand">
+           ProtoNomina
+         </a>
+       </div>
+     </div>
+   </nav>
+   
+   <div class="container">
+       <header>
+    <h1>
+        Calculo De Nomina.    
+    </h1>
+   </header>
+   <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2>Información General
+              <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></button>
+          </h2>
+          <h3>Esta información aplica por igual a todos los empleados</h3>
+         </div>
+        <div class="panel-body">
+            <fieldset>
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <label>Salario Minimo (Bs.)</label>
+                        <input type="number" value="2300"/>
+                    </div>
+                    <div class="col-md-4 form-group"> 
+                        <label>Bs x Hora Extra</label>
+                        <input type="number" value="20"/>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label>Porcentaje(%) IVSS</label>
+                        <input type="number" value="12"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <label>Porcentaje FAOV</label>
+                        <input type="number"/>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label>Desde</label>
+                        <input type="date"/>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label>Hasta</label>
+                        <input type="date"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <label>Cant. Feriados</label>
+                        <input type="number"/>
+                    </div>
+                </div>
+            </fieldset>
+       </div>
+      </div>
+      
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2>Información Empleado
+            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus-sign"></span></button>
+            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-remove"></span></button>
+           </h2>
+         </div>
+        <div class="panel-body">
+           <fieldset>
+               <legend>Datos</legend>
+               <div class="row">
+                   <div class="col-md-4 form-group">
+                       <label>Nombre</label>
+                       <input type="text"/>
+                   </div>
+               </div>
+           </fieldset>
+            <fieldset>
+                <legend>Remuneración</legend>
+                <div class="row">
+                   <div class="col-md-4 form-group">
+                       <label>Horas Extras</label>
+                       <input type="number"/>
+                   </div>
+                    <div class="col-md-4 form-group">
+                       <label>Prestamo</label>
+                       <input type="number"/>
+                   </div>
+                   <div class="col-md-4 form-group">
+                       <label>Vale</label>
+                       <input type="number"/>
+                   </div>
+               </div>
+            </fieldset>
+       </div>
+      </div>
+      <section>
+          <header>
+              <h2>Reporte a Generar</h2>
+              <table class="table table-stripped table-hover">
+                  <thead>
+                     <tr>   
+                      <th>Nombre</th>
+                      <th>Salario</th>
+                      <th>FAOV</th>
+                      <th>IVSS</th>
+                      <th>Prestamo</th>
+                      <th>Horas Extra</th>
+                      <th>Total</th>
+                     </tr>
+                  </thead>
+              </table>
+          </header>
+      </section>
+   </div>
+   <footer style="background-color:#2a2730;color:white;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <p><a href="https://villalobos23.github.io">villalobos23</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>window.jQuery || document.write('<script src="lib/jquery/jquery-2.1.3.min.js"><\/script>')</script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
