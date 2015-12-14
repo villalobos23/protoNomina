@@ -4,7 +4,7 @@ function addEmployee(){
     var genData = document.getElementById("gen-data"),
         empData = document.getElementById("emp-data"),
         nombre = empData.querySelector('#nombre'),
-        extras = empData.querySelector('#extra'),
+        extras = empData.querySelector('#extras'),
         prestamo = empData.querySelector("#prestamo"),
         vale = empData.querySelector("#vale"),
         ivss = genData.querySelector("#ivss"),
@@ -18,12 +18,12 @@ function addEmployee(){
         fila.insertCell(0).
             appendChild(document.createTextNode(nombre.value));
         
-        first.insertCell(1).appendChild(document.createTextNode(salario.value));
-        first.insertCell(2).appendChild(document.createTextNode(faov.value));
-        first.insertCell(3).appendChild(document.createTextNode(ivss).value);
-        first.insertCell(4).appendChild(document.createTextNode(extras.value));
-    
-   alert(test.value);
+        fila.insertCell(1).appendChild(document.createTextNode(salario.value));
+        fila.insertCell(2).appendChild(document.createTextNode(faov.value));
+        fila.insertCell(3).appendChild(document.createTextNode(ivss.value));
+        fila.insertCell(4).appendChild(document.createTextNode(prestamo.value));
+        fila.insertCell(5).appendChild(document.createTextNode(extras.value*bsExtra.value));
+        
 }
 
 $(function () {
